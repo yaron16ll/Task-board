@@ -19,7 +19,6 @@ Managing your tasks using HTML, JS & CSS.
 
 
 
-
 # Description:
 
 First div (id="mission_board") contains:a Form element(TextArea element(id:"mission content"),Datetime-local(date,time)-an already pattern),and 2 Buttons elements(Reset,Add).
