@@ -1,18 +1,19 @@
+ 
 # Task Board SPA
 
 Managing your tasks using HTML, JS & CSS.
 
 ### Main Page:
 
-![mainPage](./mainPage.png)
+![](./mainPage.png)
 
 ### Mobile View:
 
-![mobile](./mobile.png)
+![](./mobile.png)
 
 ### On-Screen Error Examples:
 
-![error1](./error.png)
+![](./error.png)
 
  
 
@@ -40,5 +41,4 @@ to remove from Ui and from the stroage I used a "Foreach" method that calls an a
  each element in the array("NoteContentArray"),in order,and checkes if the element id("NoteContentArray" element) equals to the created note's id.
 If it does the item is removed from the array("splice" method) and the array is saved in the storage.
 The function "onAddNotesFromStorageLoad"(callback) adds notes from the storage using "For" loop,(JSON,storage methods),and "buildNoteOnUi" function.
-
 
