@@ -1,0 +1,167 @@
+@font-face {
+  font-family: headerfont;
+  src: url(fonts/ZhiMangXing-Regular.ttf);
+}
+body {
+  background-image: url("pics/tile.jpg");
+}
+h1 {
+  font-family: headerfont !important;
+  text-transform: capitalize;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+#mission_board {
+  background-image: url("pics/formbg.jpg");
+  height: 100%;
+  width: 40%;
+  margin: 0% 30%;
+  padding: 10px 0;
+  position: relative;
+}
+form {
+  width: 80%;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#addBtn {
+  background: aquamarine;
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  display: block;
+  left: 5px;
+}
+#resetBtn {
+  background: lightskyblue;
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  display: block;
+}
+label{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 3px 5px;
+  font-size: small;
+  }
+input {
+  background-color: lightsteelblue;
+  height:20px;
+  cursor: pointer;
+  width:30% !important;
+  margin-top: -30px!important;
+  border: none; 
+  outline:none;
+}
+#mission-content {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 27px;
+  overflow-y: scroll;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  border: none;
+  min-height: 50px;
+  background: transparent;
+  resize: none;
+  padding-left: 5px;
+  line-height: 150%;
+}
+#invaild_input {
+  background-color: red;
+  height: 100%;
+  width: 40%;
+  margin: 0% 30%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 50px;
+  visibility: hidden;
+}
+#note_board {
+  width: 70%;
+  height: 540px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+section {
+  width: 200px;
+  height: 250px;
+  background-image: url("pics/notebg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 15px;
+  padding-top: 30px;
+  display: inline-block !important;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+p{
+  width: 100px;
+  height: 10px;
+  font-style: italic;
+}
+h4{
+  width: 150px;
+  height: 130px;
+  margin-top: 150px;
+  overflow-y: scroll;
+  text-align: center;
+  font-style: italic;
+}
+.close{
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  top: -15px;
+  right: 180px;
+  display: none;
+  opacity: 0;
+}
+.glyphicon{
+  font-size: small;
+}
+section:hover > .close{
+  display: block;
+  opacity: 1;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.fade-in{
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes fadeInOpacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 720px){
+  #mission_board
+  {
+  width:90%;
+  margin: 0% 5%; 
+  }
+  form
+  {
+  width:70%;
+  margin-left: 15%;
+  margin-right:15%;
+  }
+}
+  

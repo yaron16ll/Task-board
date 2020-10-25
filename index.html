@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>tast board</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    </head>
+
+<body>
+    <h1>my task board</h1>
+
+    <div id="mission_board">
+        <button id="resetBtn" onclick="onResetMissionClicked()"> reset</button>
+        <button id="addBtn" onclick="onAddNoteClicked()"> add</button>
+
+        <form>
+            <label>Put a date and an hour:</label>
+            <input id="datetime" type="datetime-local" max="2025-01-01T00:00">
+            <textarea rows="4" maxlength="90" id="mission-content" placeholder="Insert a mission here..."></textarea>
+        </form>
+    </div>
+
+    <div id="invaild_input">Invalid inputs</div>
+    <div id="note_board"></div>
+
+    <!--my JS-->
+    <script src="index.js"></script>
+</body>
+
+</html>
