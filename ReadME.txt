@@ -18,7 +18,6 @@ Managing your tasks using HTML, JS & CSS.
 
 
 
-
 # General Description:
 
 First div (id="mission_board") contains:a Form element(TextArea element(id:"mission content"),
